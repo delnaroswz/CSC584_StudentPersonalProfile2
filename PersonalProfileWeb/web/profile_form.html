@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Club Student Personal Profile Form</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page"> 
+
+    <div class="form-container">
+        <div class="header">
+            <!-- club logo -->
+            <img src="logoClub.png" alt="Media Club Logo">
+        </div>
+
+        <!-- Form Title and Description -->
+        <div class="p-8">
+            <h1 class="text-2xl font-bold text-white mb-2">Media Club Members Profile Form</h1>
+            <p class="text-sm text-gray-400 mb-8">Please fill out your personal profile information accurately.
+            <!-- The Form -->
+            <form action="ProcessProfile" method="POST" class="space-y-6" id="profileForm">
+                
+                <!-- 1. full name -->
+                <div class="input-group">
+                    <label for="fullName">Full Name <span class="required-asterisk">*</span></label>
+                    <input type="text" id="fullName" name="fullName" class="input-highlight" placeholder="Ali Bin Ahmad" required>
+                </div>
+
+                <!-- 2. student ID -->
+                <div class="input-group">
+                    <label for="studentId">Student ID<span class="required-asterisk">*</span></label>
+                    <input type="text" id="studentId" name="studentId" class="input-highlight" placeholder="2021212353" required>
+                </div>
+                
+                <!-- 3. program -->
+                <div class="input-group">
+                    <label for="programCourse">Program<span class="required-asterisk">*</span></label>
+                    <input type="text" id="programCourse" name="programCourse" class="input-highlight" placeholder="CS240 - Bachelor of Computer Science" required>
+                </div>
+
+                <!-- 4. faculty -->
+                <div class="input-group">
+                    <label for="faculty">Faculty <span class="required-asterisk">*</span></label>
+                    <input type="text" id="faculty" name="faculty" class="input-highlight" placeholder="Faculty of Computer and Mathematical Sciences" required>
+                </div>
+
+                <!-- 5. student email -->
+                <div class="input-group">
+                    <label for="studentEmail">Student Email <span class="required-asterisk">*</span></label>
+                    <input type="email" id="studentEmail" name="studentEmail" class="input-highlight" placeholder="mvarang@student.uitm.edu.my" required>
+                </div>
+
+                <!-- 6. hobbies -->
+                <div class="input-group">
+                    <label for="hobbies">Hobbies<span class="required-asterisk">*</span></label>
+                    <input type="text" id="hobbies" name="hobbies" class="input-highlight" placeholder="e.g., Reading Sci-Fi, Hiking, Competitive Coding" required>
+                </div>
+
+                <!-- 7. short self-introduction -->
+                <div class="input-group">
+                    <label for="selfIntro">Short Self-Introduction <span class="required-asterisk">*</span></label>
+                    <textarea id="selfIntro" name="selfIntro" rows="4" class="input-highlight" placeholder="Briefly describe yourself" required></textarea>
+                </div>
+                
+                <!-- 8. submit button -->
+                <div class="flex flex-col items-center pt-6">
+                    <button type="submit" class="submit-button">Submit Profile</button>
+                    <p class="text-sm text-gray-500 mt-2">All fields must be filled before submission.</p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

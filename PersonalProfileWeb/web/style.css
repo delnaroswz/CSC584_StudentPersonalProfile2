@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* --- for all pages --- */
+body {
+    background-image: url("bgImage.png");
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+/* --- landing welcome Page --- */
+.landing-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.landing-card {
+    background-color: #b90075; /* hint pink/purple header background */
+    color: white;
+    padding: 3rem 4rem;
+    border-radius: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.landing-logo {
+    width: 300px;
+    height: auto;
+    margin: 0 auto 1.5rem;
+}
+.register-button {
+    background-color: white; 
+    color: #b90075; 
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: background-color 0.2s, transform 0.2s;
+    display: inline-block;
+    margin-top: 2rem;
+}
+/* --- end landing welcome page --- */
+
+/* --- form page --- */
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+.form-container {
+    background-color: #161b22; /* dark form */
+    border-radius: 1.5rem;
+    max-width: 900px;
+    width: 95%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.header {
+    background-color: #b90075; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img {
+    width: 300px;
+    height: auto;
+}
+.input-group label {
+    color: #c9d1d9; /* light text color */
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.input-group input,
+.input-group textarea {
+    background-color: #0d1117; 
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+/* input box color */
+.input-highlight { 
+    border-color: #b90075; 
+    box-shadow: 0 0 0 1px #b90075;
+}
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ffe6f6; 
+    box-shadow: 0 0 0 2px #ffe6f6;
+    outline: none;
+}
+.submit-button {
+    background-color: #ffe6f6; /* primary button color */
+    color: #b90075;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: none;
+}
+.submit-button:hover {
+    background-color: #b90075;
+    color: #ffe6f6;
+}
+
+/* --- required * --- */
+.required-asterisk {
+    color: #f87171; /* red */
+    margin-left: 0.25rem;
+    animation: blink 1s infinite alternate;
+}
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.7; }
+}
+/* --- end form page --- */
+
+
+/* --- display page --- */
+.display-page {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 2rem; 
+}
+.profile-card {
+    background-color: #161b22; 
+    border-radius: 1.5rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    border-left: 8px solid #b90075; 
+}
+.profile-header {
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed #30363d;
+}
+.detail-label {
+    color: #94a3b8; /* light gray label */
+    font-weight: 500;
+}
+.detail-value {
+    color: #ffffff; /* white value text */
+    font-weight: 600;
+    text-align: right;
+    max-width: 60%;
+}
+.intro-section {
+    background-color: #0d1117;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-top: 1.5rem;
+    border: 1px solid #30363d;
+}
+/* --- end display page --- */
